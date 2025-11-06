@@ -1,0 +1,262 @@
+body {
+    font-family: Cambria, Cochin;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 150.5%;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hr {
+    width: 80%;
+}
+
+.head_card {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    font-size: 1.0rem;
+    font-weight: bold
+}
+
+.cart_col1 {
+    width: 50%;
+}
+
+.cart_col2,
+.cart_col3,
+.cart_col4 {
+    width: 15%;
+    ;
+}
+
+.cart_col5 {
+    width: 5%;
+    cursor: pointer;
+}
+
+
+
+.xoabot, .themvao{
+    min-width: 30px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    padding-top: 4px;
+    border-radius: 2px;
+}
+
+
+.soluong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.soluong span {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+.soluongsp {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.head_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.cart_col1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product_img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.head_card span {
+    font-weight: bold;
+}
+
+.cart__item>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_btn1 {
+    margin-top: 2%;
+    margin-left: 10%;
+    padding: 15px 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card_btn2 {
+    margin-top: 2%;
+    float: right;
+    margin-right: 10%;
+    padding: 15px 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.thanhtoan {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+
+.giamgia {
+    width: 50%;
+}
+
+.magiamgia {
+    width: 50%;
+    height: 40px;
+}
+
+.card_btn3 {
+    margin-top: 2%;
+    margin-left: 0.5%;
+    padding: 15px 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+}
+
+.tongtien {
+    float: right;
+
+    hr {
+        width: 100%;
+    }
+
+    width: 50%;
+    background-color: aliceblue;
+    padding: 15px 15px;
+}
+
+.card_done {
+    width: 100%;
+    margin: auto;
+    padding: 15px 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: aqua;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background-color: azure;
+  box-sizing: border-box;     
+}
+
+footer .col {
+  flex: 1 1 250px;            
+  margin-bottom: 20px;
+}
+
+footer .contact {
+  width: 60%;
+  height: 35px;
+}
+
+footer .btn_contact {
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: blueviolet;
+  color: white;
+  padding: 8px 12px;
+}
+

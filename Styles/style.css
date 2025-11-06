@@ -1,0 +1,295 @@
+/* --- CONTAINER CHUNG --- */
+.cha {
+    position: relative;
+    width: 100%;
+    height: 120px; 
+}
+.con1 {
+    background-color: #3a363f;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px; 
+    box-sizing: border-box;
+    color:white;
+    font-size: 25px;
+z-index: 2;
+}
+.p {
+    margin: 0;
+}
+.content-cha a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+.con2 {
+    background-color: #635969; 
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 80px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.con2 a {
+    font-weight: bold;
+    color: #444; 
+    margin: 0 30px; 
+    color:White;
+}
+.Sp{
+    margin-left: 20px;
+    background-color: hsl(275, 11%, 32%);
+    color:white;
+    width:250px;
+    height:50px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-bottom: 25px;
+    /* margin-left: 0; */
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    margin-left: 0px;
+}
+.search{
+    display: flex;
+    /* position: absolute;
+    left:300px;
+    top:0px; */
+    margin-left: 25%;
+    min-width: 500px;
+    z-index: 1;
+}
+
+
+.search input[type="text"]{
+    width:300px;
+    height:47px;
+    top:-15px;
+    margin-left: 150px;
+    position: absolute;
+}
+.btn1{
+    background-color: hsl(311, 15%, 22%);
+    border: none;
+    color: white;
+    width:120px;
+    height:50px;
+    margin-left: 450px;
+    /* top:0px;
+    left:567px;
+    position: absolute; */
+    cursor: pointer;
+}
+
+
+
+a:hover{
+    color:rgb(18, 58, 114);
+}
+.danh-muc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #eee;
+    border-top: none;
+    width:250px;
+    /* position: relative;
+    top:30px; */
+}
+.danh-muc-list li {
+    border-bottom: 1px solid #eee;
+}
+.danh-muc-list a {
+    display: block;
+    padding: 10px 20px;
+    color: #444; 
+    font-size: 18px;
+    transition: all 0.2s;
+}
+.danh-muc-list a:hover {
+    background-color: #f7f7f7;
+    color: #7fad39;
+    padding-left: 25px;
+}
+.search p{
+    margin: 0;
+}
+.anh{
+    width:100%;
+    height:100px;
+}
+#chinhanh{
+    width:850px;
+    height:550px;
+    position: absolute;
+    top:185px;
+    left: 280px;
+}
+.canchinh{
+    font-size: 18px;
+    display:flex;
+    width: 100%;
+    height:50px;
+    position: relative;
+}
+.hidden-keep-space {
+    visibility: hidden; 
+    opacity: 0; 
+}
+.Menu-ngang {
+    overflow-x: scroll; 
+    overflow-y: hidden;
+    white-space: nowrap; /* Quan trọng: Giữ các item trên một hàng */
+    padding: 10px 0; /* Khoảng đệm trên/dưới */
+    cursor: grab;
+    scrollbar-width: none; 
+}
+.product-item {
+    display: inline-block; /* Quan trọng: Cho phép xếp trên một hàng */
+    width: 400px; /* Đặt chiều rộng cố định cho mỗi item */
+    height:200px;
+    margin-right: 30px; /* Khoảng cách giữa các item */
+    text-align: center;
+    border: 1px solid #eee;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    overflow: hidden;
+    vertical-align: top; /* Giúp căn chỉnh đều trên cùng một hàng */
+}
+.product-item img {
+    width: 100%;
+    height: 160px; 
+    /* object-fit: cover;  */
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+.item-name {
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.container{
+    position: absolute;
+    top:-10px;
+}
+body {
+    font-family: Cambria, Cochin;
+
+}
+
+h1{
+    background-color: #3d3743;
+    text-align: center;
+    color: #eee;
+    height: 80px;
+    margin: 0;
+    padding-top: 25px;
+    box-sizing: border-box;
+ }
+
+.docblog{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.frblog {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+.forfrblog {
+    width: 15%;
+    border: 3px solid red;
+}
+
+.Menu-ngang-2 {
+    overflow-x: hidden; 
+    white-space: normal; 
+    cursor: default !important; /* Bỏ con trỏ kéo */
+    padding: 15px; /* Thêm padding cho khung */
+    border: 1px solid #ddd; /* Thêm đường viền để tạo khung */
+    border-radius: 8px;
+    display: grid;
+    /* Chia thành 3 cột đều nhau */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Khoảng cách giữa các item */
+}
+
+.Menu-ngang-2 .product-item {
+    /* Quan trọng: Xóa bỏ các thuộc tính Flex/Inline Block cũ */
+    display: block; 
+    width: auto; /* Chiếm toàn bộ chiều rộng cột Grid */
+    height: auto;
+    margin-right: 0; 
+    border: 1px solid #eee;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.Menu-ngang-2 .product-item img {
+    height: 180px; 
+}
+.blog{
+    width: 23%;
+    min-width: 250px;
+    margin-left: 110px;
+    margin-right: 0px;
+}
+
+.blog > img {
+    width: 100%;
+    min-width: 200px;
+    height: auto;
+    border-radius: 25%;
+}
+.blog > span{
+    color: #ccc;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: azure;
+    box-sizing: border-box;
+}
+footer .col {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+footer .contact {
+    width: 60%;
+    height: 35px;
+}
+
+footer .btn_contact {
+    box-sizing: border-box;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    height: 35px;
+    margin-top: 15px;
+    /* padding: 1px 12px;*/
+}

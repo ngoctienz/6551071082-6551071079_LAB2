@@ -1,0 +1,78 @@
+body {
+    font-family: Cambria, Cochin;
+
+}
+
+
+
+.docblog{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.frblog {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    /* border-bottom: 3px solid red; */
+}
+
+.forfrblog {
+    width: 15%;
+    border: 3px solid red;
+}
+
+.blog{
+    width: 30%;
+    min-width: 250px;
+    margin-left: 1%;
+    margin-right: 1%
+}
+
+.blog > img {
+    width: 100%;
+    min-width: 200px;
+    height: auto;
+    border-radius: 25%;
+}
+
+.blog > span{
+    color: #ccc;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: azure;
+    box-sizing: border-box;
+}
+
+footer .col {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+footer .contact {
+    width: 60%;
+    height: 35px;
+}
+
+footer .btn_contact {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    padding: 8px 12px;
+}
