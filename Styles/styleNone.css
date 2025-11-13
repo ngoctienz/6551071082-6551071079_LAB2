@@ -1,0 +1,57 @@
+.heading1 {
+    background-color: azure;
+    width: 100%;
+    height: 30px;
+    display: flex; 
+    justify-content: space-between;
+    font-size: 1.25rem; 
+    font-weight: bold;
+    color: black;
+}
+
+.heading_menu1 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-between;
+    gap: 30px; 
+    background-color: lightblue;
+    padding: 10px 0;
+}
+
+.heading_menu1 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: azure;
+    box-sizing: border-box;
+}
+
+footer .col {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+footer .contact {
+    width: 60%;
+    height: 35px;
+}
+
+footer .btn_contact {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    padding: 8px 12px;
+}

@@ -1,0 +1,282 @@
+body {
+    font-family: Cambria
+}
+
+.banner-container {
+    position: relative;
+    width: 100%
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .5)
+}
+
+
+.title {
+    font-size: 150.5%;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 80%;
+
+}
+
+
+
+
+
+ul>li {
+    list-style: none;
+    margin-top: 15px;
+}
+
+li>a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.iconSearch {
+    width: 55px;
+    height: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.iconSearch:active {
+    transform: scale(0.95);
+}
+
+.Search {
+    margin-top: 10px;
+    width: 170px;
+    height: 35px;
+    border-radius: 25px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-row {
+    display: flex;
+}
+
+
+.blog-layout {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.sidebar {
+    width: 250px;
+}
+
+.search-row {
+    display: flex;
+    gap: 5px;
+}
+
+.Search {
+    flex: 1;
+    padding: 6px;
+    padding-left: 30px;
+}
+
+.iconSearch {
+    width: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.iconSearch:hover {
+    transform: scale(1.1);
+}
+
+.categories {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+.categories p {
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+    color: #333;
+    border-bottom: 3px solid blueviolet;
+    padding-bottom: 10px;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories li {
+    margin: 10px 0;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.categories li:hover {
+    background-color: blueviolet;
+    padding-left: 15px;
+}
+
+.categories a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-weight: 500;
+}
+
+.categories li:hover a {
+    color: white;
+}
+
+.post {
+    max-width: 1000px;
+    margin: auto;
+    flex: 1;
+}
+
+.image-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  position: relative;
+}
+
+.imgBlog {
+  width: 100%;
+  height: 100%;         
+  object-fit: cover;  
+  transition: 0.6s;
+}
+
+.image-container:hover .imgBlog {
+  transform: scale(1.1);
+}
+
+
+.post a {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .blog-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+
+.danhMuc{
+    width: 80%;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: blueviolet;
+    padding: 10px 0 10px 10px;
+    margin: 2% 10% 2% 10%;
+    border-radius: 10px
+}
+
+.blog-main {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+
+.blog-main .post a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.xemThem{
+    display: block;
+    padding: 15px 50px;
+    margin: auto;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: blue;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: azure;
+}
+
+.xemThem:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.xemThem:active{
+    transform: scale(0.95);
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: azure;
+    box-sizing: border-box;
+}
+
+footer .col {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+footer .contact {
+    width: 60%;
+    height: 35px;
+    padding: 0 10px;
+}
+
+footer .btn_contact {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 40px;
+    width: 70px;
+}

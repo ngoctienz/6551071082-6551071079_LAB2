@@ -1,4 +1,3 @@
-
 .banner-container {
     position: relative;
     width: 100%;
@@ -37,7 +36,20 @@
 
 
 
+.checkOut {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 1100px; 
+}
 
+.col_one, .col_two {
+    flex: 1 1 300px; 
+    min-width: 300px;
+    max-width: 600px;
+    padding: 2rem;
+}
 .cupon {
     width: 80%;
     text-align: center;
@@ -48,9 +60,9 @@
 }
 
 
-
 form {
-    width: 80%;
+    min-width: 400px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -70,30 +82,82 @@ input[type="text"] {
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
+    gap: 35px;
+}
+
+.row label {
+    flex: 1;
+    min-width: 50px;
 }
 
 
-.row_oder{
+.row_oder {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;;
+    justify-content: space-between;
+    ;
 }
 
-.blog > img {
+.blog>img {
     width: 25%;
     height: auto;
 }
+.payMent {
+    padding: 15px 50px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 250px;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: lightblue;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.col_two {
+    background-color: azure;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 750px;
+    align-self: flex-start;
+}
 
 
+.payMent:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.payMent:active{
+    transform: scale(0.95);
+}
 
 
+.r1, .r2,.r111{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
 
+.r11{
+    font-size: 1.0rem;
+}
 
+.r22{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
 
+.r222{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: red;
+}
 
-
-
+.col_two >div>span{
+    padding: 10px 0px;
+}
 
 
 
@@ -114,13 +178,17 @@ footer .col {
 footer .contact {
     width: 60%;
     height: 35px;
+    padding: 0 10px;
 }
-
 footer .btn_contact {
     border: none;
     font-weight: bold;
     cursor: pointer;
     background-color: blueviolet;
     color: white;
-    padding: 8px 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 40px;
+    width: 70px;
+    margin-top: 12px;
 }

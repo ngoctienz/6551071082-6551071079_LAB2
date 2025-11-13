@@ -1,0 +1,112 @@
+body {
+    font-family: Cambria;
+}
+
+.product-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.image-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.info-section {
+    flex: 1;
+}
+
+#main-product-image {
+    max-width: 100%;
+    height: auto;
+    /* Giữ tỷ lệ */
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    width: 350px;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail-gallery img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    /* Xóa margin-right: 10px; nếu bạn dùng gap */
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.thumbnail-gallery img:hover,
+.thumbnail-gallery img.active {
+    border-color: #4CAF50;
+}
+
+.price {
+    color: #cc0000;
+    font-size: 1.5em;
+}
+
+.rating {
+    color: gold;
+}
+
+.themVao{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 35px;
+}
+
+.pro-qty .qtybtn {
+    width: 15px;
+    font-size: 16px;
+    color: #6f6f6f;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.pro-qty input {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    color: #6f6f6f;
+    width: 50px;
+    border: none;
+    background: #f5f5f5;
+    text-align: center;
+}
+hr {
+   width: 80%;
+}
+
+.product-description {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+.danhMuc{
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 0 10px 10px;
+    border-radius: 10px
+}
