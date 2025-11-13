@@ -2,16 +2,60 @@
 <html lang="vi">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ - Thanh Toán</title>
+    <link rel="stylesheet" href="Styles/head_foot.css">
     <link rel="stylesheet" href="Styles/Styles5.css">
     <script src="Scripts/jquery-3.7.1.js"></script>
-    <script src="Scripts/Scripts.js" type="text/javascript"></script>
+    <script src="Javascript/script.js" type="text/javascript"></script>
 </head>
 
 <body>
     <header>
+            <div class="con1">
+        <div class="contact-info">
+            <a href="mailto:Hello@colorib.com">
+                <i class="fas fa-envelope"></i>
+                <span>Hello@colorib.com</span>
+            </a>
+        </div>
+        <div class="content-cha">
+            <a href="#">
+                <i class="fas fa-sign-in-alt"></i>
+                <span>Đăng nhập</span>
+            </a>
+            <a href="#">
+                <i class="fas fa-user-plus"></i>
+                <span>Đăng kí</span>
+            </a>
+        </div>
+    </div>
+    <nav class="main-nav">
+        <a href="index.html" class="active">TRANG CHỦ</a>
+        <a href="Shope.html">CỬA HÀNG</a>
+
+        <div class="pages-item">
+            <a href="#">TRANG PHỤ</a>
+            <ul class="dropdown-menu">
+                <li><a href="shop-details.html">Chi tiết sản phẩm</a></li>
+                <li><a href="shoping-cart.html">Giỏ hàng</a></li>
+                <li><a href="checkout.html">Thanh toán</a></li>
+                <li><a href="blog.html">Chi tiết bài viết</a></li>
+            </ul>
+        </div>
+
+        <a href="blog.html">BLOG</a>
+        <a href="contact.html">LIÊN HỆ</a>
+    </nav>
 
 
+    <div class="canchinh">
+        <div class="search">
+            <input type="text" placeholder="Game">
+            <button type="submit" class="btn1">Search</button>
+        </div>
+    </div>
 
         <div class="banner-container">
             <img src="Images/banner.png" alt="banner" class="banner">
@@ -27,7 +71,6 @@
     <br>
     <main>
         <br>
-
         <p class="cupon"><span class="icon_tag_alt"></span>🏷️ Bạn có phiếu giảm giá không? <a href="#">Nhấn vào đây</a>
             để nhập mã của bạn</p>
 
@@ -39,69 +82,63 @@
                     <div class="row">
                         <label for="fistname">Họ và tên đệm*
                             <br>
-                            <input type="text">
+                            <input type="text" id="fistname" name="first_name" required>
                         </label>
                         <label for="lastname">Tên*
                             <br>
-                            <input type="text">
+                            <input type="text" id="lastname" name="last_name" required>
                         </label>
                     </div>
-                    <label for="quocgia">Quốc gia*<br>
-                        <input type="text">
+
+                    <label for="quocgia_1">Quốc gia*<br>
+                        <input type="text" id="quocgia_1" name="country_1" required>
                     </label>
                     <br>
+
                     <label for="diachi">Địa chỉ*<br>
-                        <input type="text" placeholder="Số nhà, đường phố"><br>
-                        <input type="text" placeholder="Phường/ Thị trấn">
+                        <input type="text" id="diachi_so_nha" name="address_line_1" placeholder="Số nhà, đường phố"
+                            required><br>
+                        <input type="text" id="diachi_phuong" name="address_line_2" placeholder="Phường/ Thị trấn"
+                            required>
                     </label><br>
+
                     <label for="thanhpho">
                         Thành phố*<br>
-                        <input type="text">
+                        <input type="text" id="thanhpho" name="city" required>
                     </label><br>
-                    <label for="quocgia">
+
+                    <label for="quocgia_2">
                         Quốc gia*<br>
-                        <input type="text">
+                        <input type="text" id="quocgia_2" name="country_2" required>
                     </label>
                     <br>
+
                     <label for="mabuudien">
-                        <input type="text">
+                        Mã bưu điện*<br>
+                        <input type="text" id="mabuudien" name="postal_code" required>
                     </label>
 
                     <div class="row">
                         <label for="sodienthoai">
                             Số điện thoại*<br>
-                            <input type="text">
+                            <input type="text" id="sodienthoai" name="phone" required>
                         </label>
                         <label for="Email">
                             Email*<br>
-                            <input type="text">
+                            <input type="text" id="Email" name="email" required>
                         </label>
-
                     </div>
-                    <input type="checkbox" id="create_acc">
-                    <label for="create_acc">Tạo tài khoản mới</label>
-                    <br>
 
                     <div class="create">
-                        <p>Create an account by entering the information below. If you are a returning customer
-                            please
-                            login
-                            at
-                            the top of the page</p>
                         <label for="pass">
                             Mật khẩu*<br>
-                            <input type="text">
+                            <input type="text" id="pass" name="password">
                         </label>
                     </div>
-
-                    <input type="checkbox" id="diachikhac">
-                    <label for="diachi">Địa chỉ nhận hàng khác</label>
-
-                    <br>
 
                     <label for="ghichu">
                         Ghi chú đơn hàng<br>
-                        <input type="text" placeholder="Ghi chú về đơn hàng của bạn.">
+                        <input type="text" id="ghichu" name="order_notes" placeholder="Ghi chú về đơn hàng của bạn.">
                     </label>
                 </form>
             </div>

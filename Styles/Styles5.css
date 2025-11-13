@@ -1,55 +1,20 @@
-.banner-container {
-    position: relative;
-    width: 100%;
-}
-
-.banner {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.title {
-    font-size: 150.5%;
-    font-weight: bold;
-}
-
-.subtitle {
-    font-size: 80%;
-
-}
-
-
-
-
-
-
-
 .checkOut {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     margin: 0 auto;
-    max-width: 1100px; 
+    max-width: 1100px;
 }
 
-.col_one, .col_two {
-    flex: 1 1 300px; 
+.col_one,
+.col_two {
+    flex: 1 1 300px;
     min-width: 300px;
     max-width: 600px;
     padding: 2rem;
+    box-sizing: border-box;
 }
+
 .cupon {
     width: 80%;
     text-align: center;
@@ -59,11 +24,11 @@
     border-top: 3px solid red;
 }
 
-
 form {
-    min-width: 400px;
     max-width: 600px;
     margin: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 
@@ -102,6 +67,7 @@ input[type="text"] {
     width: 25%;
     height: auto;
 }
+
 .payMent {
     padding: 15px 50px;
     width: 100%;
@@ -126,69 +92,67 @@ input[type="text"] {
 }
 
 
-.payMent:hover{
+.payMent:hover {
     background-color: blueviolet;
     color: white;
 }
-.payMent:active{
+
+.payMent:active {
     transform: scale(0.95);
 }
 
 
-.r1, .r2,.r111{
+.r1,
+.r2,
+.r111 {
     font-size: 1.25rem;
     font-weight: bold;
 }
 
-.r11{
+.r11 {
     font-size: 1.0rem;
 }
 
-.r22{
+.r22 {
     font-size: 1.1rem;
     font-weight: bold;
 }
 
-.r222{
+.r222 {
     font-weight: bold;
     font-size: 1.25rem;
     color: red;
 }
 
-.col_two >div>span{
+.col_two>div>span {
     padding: 10px 0px;
 }
 
 
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 10%;
-    background-color: azure;
-    box-sizing: border-box;
-}
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
 
-footer .col {
-    flex: 1 1 250px;
-    margin-bottom: 20px;
-}
+        gap: 0;
 
-footer .contact {
-    width: 60%;
-    height: 35px;
-    padding: 0 10px;
-}
-footer .btn_contact {
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: blueviolet;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    height: 40px;
-    width: 70px;
-    margin-top: 12px;
+    }
+
+    .row label {
+        flex: 100%;
+
+        min-width: 100%;
+    }
+
+    .col_one,
+    .col_two {
+        flex: 1 1 100%;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .checkOut {
+        padding: 0 15px;
+    }
 }

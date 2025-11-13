@@ -1,43 +1,3 @@
-body {
-    font-family: Cambria
-}
-
-.banner-container {
-    position: relative;
-    width: 100%
-}
-
-.banner {
-    width: 100%;
-    height: auto;
-    display: block
-}
-
-.banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, .5)
-}
-
-
-.title {
-    font-size: 150.5%;
-    font-weight: bold;
-}
-
-.subtitle {
-    font-size: 80%;
-
-}
-
-
-
-
 
 ul>li {
     list-style: none;
@@ -158,6 +118,9 @@ li>a {
     max-width: 1000px;
     margin: auto;
     flex: 1;
+    background-color: azure;
+    padding: 5px 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .image-container {
@@ -238,6 +201,7 @@ li>a {
     cursor: pointer;
     transition: all 0.5s;
     color: azure;
+    margin-top: 50px;
 }
 
 .xemThem:hover{
@@ -246,37 +210,4 @@ li>a {
 }
 .xemThem:active{
     transform: scale(0.95);
-}
-
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 10%;
-    background-color: azure;
-    box-sizing: border-box;
-}
-
-footer .col {
-    flex: 1 1 250px;
-    margin-bottom: 20px;
-}
-
-footer .contact {
-    width: 60%;
-    height: 35px;
-    padding: 0 10px;
-}
-
-footer .btn_contact {
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: blueviolet;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    height: 40px;
-    width: 70px;
 }
